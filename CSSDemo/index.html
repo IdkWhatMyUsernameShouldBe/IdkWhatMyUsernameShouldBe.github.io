@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        #BlueText {
+            color: blue;
+        }
+
+        #RedText {
+            color: red;
+        }
+
+        #GreenText {
+            color: green;
+            font-size: 24px;
+            text-align: right;
+        }
+
+        .big {
+            font-size: 48px;
+        }
+
+        .purp {
+            font-size: 48px;
+            text-align: right;
+            color: purple;
+        }
+
+        .special {
+            font-size: 36px;
+            color: slateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Today we will learn about adding style</h1>
+    <h2>1. This is how we add style with inline CSS</p>
+        <p>This paragraph has no style</p>
+        <p style="color: seagreen">This is a seagreen paragraph</p>
+        <p style="color: rgb(235,11,223); font-size: 50px;">This is an rgb(235,11,223) with font size 50px paragraph
+        </p>
+        <p style="color: red; background-color: coral; font-size: 24px; text-align: center;">This is a red, font
+            size 24px, centered paragraph with coral background</p>
+        <h2>2. This is how we add style with internal CSS and ID selectors</h2>
+        <p id="BlueText">I want this text too be blue</p>
+        <p id="RedText">This one should be red</p>
+        <p id="GreenText">This text will be green, 24px, and right aligned</p>
+        <h2>3. This is how we add style with internal CSS and class selectors</h2>
+        <p class="big">I want this text to be really big</p>
+        <p class="purp">What will I look like?</p>
+        <h2>4. this is how we use element tag selectors</h2>
+        <h3>I want this h3 to be aqua</h3>
+        <h3>I want this h4 to be aqua</h3>
+        <h2>This is how we use divs and spans</h2>
+        <div class="special">
+            <p>Figure out on your own how to create table borders like this using element selectors</p>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Food</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Cicken Fried Rice</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Spaghetti</td>
+                </tr>
+            </table>
+            <p>This paragraph is also part of the div</p>
+            <p>This paragraph is still a part of the div</p>
+        </div>
+</body>
+
+</html>
