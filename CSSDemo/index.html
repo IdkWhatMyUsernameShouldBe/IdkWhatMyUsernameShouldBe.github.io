@@ -8,6 +8,57 @@
     <title>CSS Demo</title>
     <link rel="stylesheet" href="mystyle.css">
     <style>
+        @keyframes rgbcolors {
+            0% {
+                color: red;
+            }
+
+            11% {
+                color: orange;
+            }
+
+            22% {
+                color: gold;
+            }
+
+            33% {
+                color: yellowgreen;
+            }
+
+            44% {
+                color: green;
+            }
+
+            55% {
+                color: teal;
+            }
+
+            66% {
+                color: blue;
+            }
+
+            77% {
+                color: indigo;
+            }
+
+            90% {
+                color: darkmagenta;
+            }
+
+            100% {
+                color: red;
+            }
+        }
+
+        h3 {
+            color: aqua;
+        }
+
+        h4 {
+            color: aqua;
+        }
+
+
         #BlueText {
             color: blue;
         }
@@ -36,13 +87,32 @@
             font-size: 36px;
             color: slateblue;
         }
+
+
+
+        .borderless {
+            font-size: 48px;
+            font-weight: 600;
+            animation-name: rgbcolors;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            text-align: center;
+
+        }
     </style>
 </head>
 
 <body>
-    <h1>Today we will learn about adding style</h1>
-    <h2>1. This is how we add style with inline CSS</p>
-        <p>This paragraph has no style</p>
+    <div class="bordered">
+        <ul class="navbar">
+            <li class="navbarlink"><a href="index.html">Home</a></li>
+            <li class="navbarlink"><a href="gallery.html">Gallery</a></li>
+        </ul>
+        <div class="whitetext">
+            <h1>Today we will learn about adding style</h1>
+            <h2>1. This is how we add style with inline CSS</p>
+                <p>This paragraph has no style</p>
+        </div>
         <p style="color: seagreen">This is a seagreen paragraph</p>
         <p style="color: rgb(235,11,223); font-size: 50px;">This is an rgb(235,11,223) with font size 50px paragraph
         </p>
@@ -78,6 +148,9 @@
             <p>This paragraph is also part of the div</p>
             <p>This paragraph is still a part of the div</p>
         </div>
+    </div>
+    <h2 class="borderless">I am borderless!</h2>
+
 </body>
 
 </html>

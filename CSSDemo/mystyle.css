@@ -1,59 +1,48 @@
 body {
-    background-color: sandybrown;
+    background-color: black;
 }
 
-h3 {
-    color: aqua;
+.bordered {
+    border: 8px solid green;
+    background-color: black;
+    padding-top: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
 }
 
-h4 {
-    color: aqua;
+.whitetext {
+    color: gainsboro;
 }
 
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbarlink {
+    float: left;
+    font-size: 24px;
+}
+
+li a:hover {
+    background-color: yellowgreen;
+}
 
 th,
 td {
     border: 4px solid black;
-}
-
-@keyframes rgbcolors {
-    0% {
-        color: red;
-    }
-
-    11% {
-        color: orange;
-    }
-
-    22% {
-        color: gold;
-    }
-
-    33% {
-        color: yellowgreen;
-    }
-
-    44% {
-        color: green;
-    }
-
-    55% {
-        color: teal;
-    }
-
-    66% {
-        color: blue;
-    }
-
-    77% {
-        color: indigo;
-    }
-
-    90% {
-        color: darkmagenta;
-    }
-
-    100% {
-        color: red;
-    }
 }
