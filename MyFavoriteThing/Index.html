@@ -8,77 +8,142 @@
     <title>Document</title>
     <link rel="stylesheet" href="mystyle.css">
     <style>
+        #link {
+            font-size: x-large;
+            font-weight: 400;
+            animation-name: rgbcolors;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            text-align: center;
 
+        }
 
+        #paragraph {
+            text-align: center;
+            font-size: larger;
+            font-weight: 300;
+        }
 
+        .image {
+            width: 620px;
+            height: 460px;
+            float: left;
+        }
+
+        .righttext {
+            margin-left: 630px;
+        }
+
+        @keyframes rgbcolors {
+            0% {
+                color: red;
+            }
+
+            11% {
+                color: orange;
+            }
+
+            22% {
+                color: gold;
+            }
+
+            33% {
+                color: yellowgreen;
+            }
+
+            44% {
+                color: green;
+            }
+
+            55% {
+                color: teal;
+            }
+
+            66% {
+                color: blue;
+            }
+
+            77% {
+                color: indigo;
+            }
+
+            90% {
+                color: darkmagenta;
+            }
+
+            100% {
+                color: red;
+            }
+        }
     </style>
 </head>
 
 
 
 <body>
-    <h1>My favorite things about EPS</h1>
-    <img src="images\EPS.jpg" alt="EPS image" style="width:128px;height:128px;">
-    <p>Some of my favorite things about EPS are:</p>
-    <ul>
-        <li>The community</li>
-        <li>The teachers</li>
-        <li>And the social aspect</li>
-    </ul>
+    <img src="images\EPS.jpg" alt="EPS image" class="image">
+    <div class="righttext">
+        <h1>My favorite things about EPS</h1>
+        <strong>Some of my favorite things about EPS are:</strong>
+        <ul>
+            <li>The community</li>
+            <li>My friends</li>
+            <li>Classes</li>
+            <li>The teachers</li>
+        </ul>
 
-    <strong>I also like my classes this trimester.</strong>
-    <table style="width:10%">
-        <caption>My classes:</caption>
-        <tr>
-            <th>Period</th>
-            <th>Class</th>
-        </tr>
-        <tr>
-            <td>A Period</td>
-            <td>Free</td>
-        </tr>
-        <tr>
-            <td>B Period</td>
-            <td>Calculus</td>
-        </tr>
-        <tr>
-            <td>C Period</td>
-            <td>Medieval Literature</td>
-        </tr>
-        <tr>
-            <td>D Period</td>
-            <td>Medieval History</td>
-        </tr>
-        <tr>
-            <td>E Period</td>
-            <td>Spanish</td>
-        </tr>
-        <tr>
-            <td>F Period</td>
-            <td>GSH</td>
-        </tr>
-        <tr>
-            <td>G Period</td>
-            <td>Web Design!</td>
-        </tr>
-        <tr>
-            <td>H Period</td>
-            <td>Chemistry</td>
-        </tr>
-    </table>
-
-    <p>In EPS, there are 4 class periods per day, each of them are 70 minutes but one of them is a free period so you
-        have a lot of freedom which I like. Also, the teachers are really nice and helpfull which makes classes a lot
-        more interesting and enjoyable. However, my favorite aspect of EPS is probably being able to see and talk to my
+        <strong>I also like my classes this trimester.</strong>
+        <table style="width:60%">
+            <tr>
+                <th>Period</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>A Period</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>B Period</td>
+                <td>Calculus</td>
+            </tr>
+            <tr>
+                <td>C Period</td>
+                <td>Medieval Literature</td>
+            </tr>
+            <tr>
+                <td>D Period</td>
+                <td>Medieval History</td>
+            </tr>
+            <tr>
+                <td>E Period</td>
+                <td>Spanish</td>
+            </tr>
+            <tr>
+                <td>F Period</td>
+                <td>GSH</td>
+            </tr>
+            <tr>
+                <td>G Period</td>
+                <td>Web Design!</td>
+            </tr>
+            <tr>
+                <td>H Period</td>
+                <td>Chemistry</td>
+            </tr>
+        </table>
+    </div>
+    <p id="paragraph">In EPS, there are 4 class periods per day, each being 70 minutes long. However, every day one
+        class period is a free period. Free periods give you extra time to socialize, finish homework, study or just
+        relax and overall I love the freedom. Also, the teachers are really nice and helpfull which makes classes a
+        lot
+        more interesting and enjoyable. However, my favorite aspect of EPS is probably being able to see and talk to
+        my
         friends.</p>
 
-    <br>
+    <a href="https://www.eastsideprep.org/" target="_blank" id="link"> Click here if you want to learn more about
+        EPS!</a>
 
-    <p>EPS is overall a great school and Im glad to go here</p>
-    <a href="https://www.eastsideprep.org/">Click here if you want to learn more about EPS</a>
-    <br>
-    <p>PS. I didnt add an image because everytime I do the file stops working. I promise that I do know how to, we will
-        probably have to troubleshoot it sometime.</p>
+
 </body>
 
 </html>
