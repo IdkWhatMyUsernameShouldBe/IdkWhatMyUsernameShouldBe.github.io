@@ -27,6 +27,15 @@ body {
 
 }
 
+.galleryimage {
+    border: 8px solid salmon;
+    background-color: lightgoldenrodyellow;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
 li a {
     display: block;
     color: white;
