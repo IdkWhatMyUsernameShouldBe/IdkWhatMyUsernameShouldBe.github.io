@@ -16,6 +16,10 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: komet,
+        sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 
@@ -31,4 +35,45 @@ li a:hover {
 p {
     color: white;
     font-size: larger;
+    font-family: komet,
+        sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
 }
+
+h1 {
+    font-family: komet;
+    sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 32px;
+}
+
+font-family: komet,
+sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: komet;
+sans-serif;
+font-weight: 400;
+font-style: italic;
+
+
+font-family: komet,
+sans-serif;
+font-weight: 700;
+font-style: italic;
+
+
+font-family: komet,
+sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: komet-sc,
+sans-serif;
+font-weight: 700;
+font-style: normal;
