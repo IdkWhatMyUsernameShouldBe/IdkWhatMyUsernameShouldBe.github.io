@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+    <style>
+        #antman {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's learn Javascript!</h1>
+    <h2>How do we do oneclick events and alerts?</h2>
+    <a href="https://www.epschedule.com/" target="_blank" onclick="alert('Never gonna give you up')">EPSchedule</a>
+    <hr>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='BATMAN';
+        document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick=" document.getElementById('secret').style.display='none'">Hide!</button>
+    <hr>
+    <h2>Two Truths and a Lie:</h2>
+    <p>Which one is a lie?</p>
+    <ol>
+        <li id=" lie">Number 2 is the lie</li>
+        <li>This is not the lie</li>
+        <li>Number 1 is the lie</li>
+    </ol>
+    <button onclick="document.getElementById('lie').innerHTML='I am the lie!'">Reveal!</button>
+    <hr>
+    <h1>How do we change images in Javascript</h1>
+    <img src="images/Frame1.jpg" alt="Frame1" id="lightbulb">
+    <button onclick="bulbOn();">On!</button>
+    <button onclick="bulbOff();">Off!</button>
+    <hr>
+    <p id="antman">BIG</p>
+    <button
+        onclick="document.getElementById('antman').style.fontSize='10px'; document.getElementById('antman').innerHTML='small'">Shrink!</button>
+    <button onclick="growText();">Grow!</button>
+    <hr>
+    <h2>How do we return user input data?</h2>
+    <button onclick="askName();">What's your name?</button>
+    <p id="ask-code"></p>
+
+    <hr>
+    <!--Individual Challenge-->
+
+    <h1>Turn off the lights</h1>
+
+    <button onclick="lightsOut();">Lights out!</button>
+    <button onclick="lightsOn();">Lights on!</button>
+    <hr>
+
+    <h1>Move the text</h1>
+    <p id="moveable">Weeeee</p>
+    <button onclick="textRight();">Move right</button>
+    <button onclick="textLeft();">Move left</button>
+    <script>
+        function growText() {
+            let antmanText = document.getElementById('antman');
+            antmanText.style.fontSize = '40px';
+            antmanText.innerHTML = 'BIG';
+        }
+        function askName() {
+            let secretCode = document.getElementById('ask-code');
+            let password = prompt("What is your name?");
+            if (password === "Open Sesame") {
+                secretCode.innerHTML = "Welcome!";
+            } else {
+                secretCode.innerHTML = "Hello " + password + ". please leave.";
+            }
+        }
+        function bulbOn() {
+            let bulb = document.getElementById('lightbulb')
+            bulb.src = 'images/Frame2.jpg';
+
+        }
+        function bulbOff() {
+            let bulb = document.getElementById('lightbulb')
+            bulb.src = 'images/Frame1.jpg';
+        }
+        function lightsOut() {
+            document.body.style.backgroundColor = "black";
+        }
+        function lightsOn() {
+            document.body.style.backgroundColor = "white";
+        }
+        function textRight() {
+            let text = document.getElementById('moveable')
+            text.style.textAlign = "right";
+        }
+        function textLeft() {
+            let text = document.getElementById('moveable')
+            text.style.textAlign = "left";
+        }
+    </script>
+</body>
+
+</html>
