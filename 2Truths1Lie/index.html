@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Truths and a Lie - Darius Partovi</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <h1 style="font-size: 48px;">2 Truths and a Lie</h1>
+    <hr>
+    <h2>Introductions:</h2>
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="greet"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="greet"><br>
+        <label for="age">Age;</label><br>
+        <input type="text" id="age" name="greet"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet()">
+    <p id="greet"></p>
+
+    <h2>Warmup Trivia:</h2>
+    <p>What is the second month of the year?</p>
+    <form action="">
+        <input type="radio" id="march" name="trivia">
+        <label for="march">March</label><br>
+        <input type="radio" id="tuesday" name="trivia">
+        <label for="tuesday">Tuesday</label><br>
+        <input type="radio" id="february" name="trivia">
+        <label for="february">February</label><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia()">
+    <p id="trivia-answer"></p>
+
+    <h2>2 Truths and a Lie</h2>
+    <p>Guess the lie.</p>
+    <form action="">
+        <input type="radio" id="bones" name="truths">
+        <label for="bones">I've never broken a bone in my life. </label><br>
+        <input type="radio" id="language" name="truths">
+        <label for="language">English isn't my first language.</label><br>
+        <input type="radio" id="zip" name="truths">
+        <label for="zip">I hate ziplining with a passion.</label><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="truths()">
+    <p id="truths-answer"></p>
+    <!--Script-->
+    <script src="js/game.js"></script>
+</body>
+
+</html>
