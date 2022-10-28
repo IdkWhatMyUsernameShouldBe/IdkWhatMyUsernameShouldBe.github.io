@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<!--Navbar-->
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-sm bg-primary nav-dark">
+        <!--Logo-->
+        <a class="navbar-brand" href="#">
+            <img src="images/soren.PNG" class="rounded-circle" alt="logo" style="width: 60px;">
+        </a>
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container p-5 mx-0 m-5 text-white border">
+        <h1>My first bootstrap page</h1>
+        <p>This part is inside a container fluid class</p>
+        <p>It takes up the enire width of the screen</p>
+    </div>
+    <!--Challenge: Create a new container with different padding, colors, and margins-->
+    <div class="container p-1 mx-0 m-1 text-black bg-white border">
+        <h1>This part is in a new container <span class="badge bg-secondary">And this is a new element called a
+                badge!</span></h1>
+        <p>The background is white and the margins are different</p>
+    </div>
+    <br>
+    <br>
+    <!--Bootstrap grid-->
+    <div class="row text-white border">
+        <div class="col-md-4 border">
+            <h4>Bootstrap can make grids</h2>
+                <p>It can adjust designs depending on the size of the screen</p>
+                <a class="btn btn-success" href="#" role="button">More on CSS</a>
+        </div>
+        <div class="col-md-1 border">
+            <h4>Bootstrap is helpful</h2>
+                <p>It is easy to use</p>
+                <a class="btn btn-primary" href="#" role="button">More on HTML</a>
+
+        </div>
+        <div class="col-md-2 border">
+            <h4>Bootstrap is cool</h2>
+                <p>Its cool</p>
+                <a class="btn btn-info" href="#" role="button">More on JS</a>
+        </div>
+        <div class="col-md-1 border">
+            <h4>Bootstrap is good</h2>
+                <p>It makes things look better</p>
+                <a class="btn btn-primary" href="#" role="button">More on Bootstrap</a>
+        </div>
+        <div class="col-md-4 border">
+            <h4>Bootstrap is usefull</h2>
+                <p>It can do a lot of stuff</p>
+                <a class="btn btn-success" href="#" role="button">More on WebDesign</a>
+        </div>
+    </div>
+</body>
+
+</html>
