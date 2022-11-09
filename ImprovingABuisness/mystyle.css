@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(112, 102, 102);
+}
+
+.navbar {
+    background-color: rgb(150, 135, 135);
+    list-style-type: none;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+
+.navbarlink {
+    float: left;
+    font-size: 24px;
+}
+
+
+li a:hover {
+    background-color: rgb(50, 40, 40);
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    border-color: rgb(222, 202, 202);
+    border-width: 6px;
+    background-color: rgb(150, 135, 135);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+            0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+
+    to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+            0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
