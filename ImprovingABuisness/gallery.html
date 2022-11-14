@@ -7,21 +7,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 
 <body>
     <div class="grid-container">
-        <div class="navbar grid-navmenu">
-            <ul>
+        <div class="grid-item grid-navmenu">
+            <ul class="navbar">
                 <li class="navbarlink"><a href="index.html">Home</a></li>
                 <li class="navbarlink"><a href="achievements.html">Achievements</a></li>
-                <li class="navbarlink"><a href="gallery.html">Gallery</a></li>
+                <li class="navbarlink active-nav"><a href="gallery.html">Gallery</a></li>
                 <li class="navbarlink"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+        <!-- Slideshow container -->
+        <div class="grid-item carousel">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="slide mySlides fade">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="Images/galleryImages/image1.jpg" class="slideshow-image">
+                    <div class="text">Caption 1</div>
+                </div>
+
+                <div class="slide mySlides fade">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="Images/galleryImages/image2.jpg" class="slideshow-image">
+                    <div class="text">Caption 2</div>
+                </div>
+
+                <div class="slide mySlides fade">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="Images/galleryImages/image3.jpg" class="slideshow-image">
+                    <div class="text">Caption 3</div>
+                </div>
+
+                <div class="slide mySlides fade">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="Images/galleryImages/image4.jpg" class="slideshow-image">
+                    <div class="text">Caption 4</div>
+                </div>
+                <div class="slide mySlides fade">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="Images/galleryImages/image5.jpg" class="slideshow-image">
+                    <div class="text">Caption 5</div>
+                </div>
+                <div class="slide mySlides fade">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="Images/galleryImages/image6.jpg" class="slideshow-image">
+                    <div class="text">Caption 6</div>
+                </div>
+                <div class="slide mySlides fade">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="Images/galleryImages/image7.jpg" class="slideshow-image">
+                    <div class="text">Caption 7</div>
+                </div>
+                <div class="slide mySlides fade">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="Images/galleryImages/image8.jpg" class="slideshow-image">
+                    <div class="text">Caption 8</div>
+                </div>
+                <div class="slide mySlides fade">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="Images/galleryImages/image9.jpg" class="slideshow-image">
+                    <div class="text">Caption 9</div>
+                </div>
+                <div class="slide mySlides fade">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="Images/galleryImages/image10.jpg" class="slideshow-image">
+                    <div class="text">Caption 10</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        </div>
     </div>
     <!--Script-->
-    <script src="js/game.js"></script>
+    <script src="js/game.js">
+
+
+
+    </script>
 </body>
 
 </html>

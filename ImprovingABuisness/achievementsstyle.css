@@ -1,0 +1,13 @@
+.content-left {
+    padding: 16px;
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 22px;
+}
+
+.content-right {
+    padding: 16px;
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 22px;
+}

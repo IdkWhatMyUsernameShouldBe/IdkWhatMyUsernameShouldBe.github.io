@@ -1,3 +1,17 @@
+.grid-container {
+    margin: 60px;
+    background: rgb(232, 187, 155);
+    border: 1px solid #ddd;
+    border-color: rgb(158, 82, 57);
+    border-width: 12px;
+    border-radius: 26px;
+    display: grid;
+    grid-template-columns: 22% auto 22%;
+    gap: 25px;
+    padding: 30px;
+}
+
+
 body {
     background-image: url("Images/pianoBackground.jpg");
     background-repeat: repeat;
@@ -33,18 +47,31 @@ li a {
 
 
 li a:hover {
-    background-color: rgb(110, 60, 120);
+    background-color: black;
 }
 
 .grid-item {
     border: 1px solid #ddd;
-    border-color: rgb(137, 114, 150);
+    border-color: rgb(158, 82, 57);
     border-width: 4px;
+    border-radius: 25px;
     background-color: snow;
     text-align: center;
     font-size: 30px;
     color: black;
 }
+
+
+.grid-navmenu {
+    border-color: black;
+    background-color: rgb(189, 113, 81);
+    border-radius: 12px;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    margin: auto;
+}
+
+
 
 .glow {
     -webkit-animation: glow 2s ease-in-out infinite alternate;
@@ -62,4 +89,8 @@ li a:hover {
         text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
             0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
+}
+
+.active-nav {
+    font-weight: bold;
 }
