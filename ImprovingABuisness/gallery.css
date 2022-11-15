@@ -1,110 +1,56 @@
-.carousel {
-    border-radius: 5px;
+.slideshow {
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
     grid-column: 1 / span 3;
     grid-row: 2;
+    height: 650px;
+}
+
+.carousel-inner {
+    margin: 0px;
     padding: 0px;
-    height: 700px;
+    border-radius: 25px;
+    height: 650px;
+    background-color: black;
 }
 
-* {
-    box-sizing: border-box
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    height: 100%;
-}
-
-/* Hide the images by default */
-.mySlides {
+.carousel-item {
     width: 100%;
-    display: none;
+    height: 100%;
+    margin-bottom: 0px;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
+.carousel-control-prev {
+    height: fit-content;
+    margin-top: 300px;
+    margin-left: 0px;
+}
+
+.carousel-control-next {
+    height: fit-content;
+    margin-top: 300px;
+    margin-right: 0px;
+}
+
+.d-block {
+    width: 700px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel-caption {
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    top: 0%;
+    font-family: belda-normal, sans-serif;
+}
+
+
+.slide-number {
+    padding: 20px;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right and "prev" on the left*/
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-.slide {
-    height: 100%;
-    width: 100%;
-}
-
-.slideshow-image {
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
+    margin: auto;
+    font-size: 16px;
+    font-family: belda-normal, sans-serif;
 }
