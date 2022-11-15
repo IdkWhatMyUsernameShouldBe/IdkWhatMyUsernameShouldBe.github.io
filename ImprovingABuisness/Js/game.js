@@ -1,28 +1,39 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideNumber = 1;
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+let maxSlides = 10;
+
+let timeCounter = 1;
+
+function delayTimer() {
+    timeCounter = 1;
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+function plusSlideNum() {
+    let slideNumberText = document.getElementById('number');
+    if (timeCounter == 1) {
+        if (slideNumber < maxSlides) {
+            slideNumber += 1;
+        } else if (slideNumber == maxSlides) {
+            slideNumber = 1;
+        }
+        slideNumberText.innerHTML = slideNumber + '/10';
+        timeCounter = 0;
+        setTimeout(delayTimer, 600);
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
 }
+
+function minusSlideNum() {
+    let slideNumberText = document.getElementById('number');
+    if (timeCounter == 1) {
+        if (slideNumber > 1) {
+            slideNumber -= 1;
+        } else if (slideNumber == 1) {
+            slideNumber = 10;
+        }
+        slideNumberText.innerHTML = slideNumber + '/10';
+        timeCounter = 0;
+        setTimeout(delayTimer, 600);
+    }
+}
+
+

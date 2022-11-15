@@ -15,6 +15,7 @@
 
 <body>
     <div class="grid-container">
+        <!--We tried to figure out wy the padding for the navbar didn't work on the bootstrap page but we couldn't figure it out-->
         <div class="grid-item grid-navmenu">
             <ul class="navbar">
                 <li class="navbarlink"><a href="index.html">Home</a></li>
@@ -29,32 +30,87 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="Images/achievementImages/achievement1.jpg" alt="Sunset lake" class="d-block"
+                        <img src="Images/achievementImages/achievement1.jpg" alt="Jonathan" class="d-block"
                             style="width:100%">
                         <div class="carousel-caption">
-                            <p>A calming sunset over a small lake</p>
+                            <p>Jonathan - State Winner</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="Images/achievementImages/achievement2.jpg" alt="Grassy Mountains" class="d-block"
+                        <img src="Images/achievementImages/achievement2.jpg" alt="Benyamin" class="d-block"
                             style="width:100%">
                         <div class="carousel-caption">
-                            <p>Some tranquil grassy mountains</p>
+                            <p>Benyamin - State Winner</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="Images/achievementImages/achievement3.jpg" Lavender Meadows" class="d-block"
+                        <img src="Images/achievementImages/achievement3.jpg" alt="Neeka" class="d-block"
                             style="width:100%">
                         <div class="carousel-caption">
-                            <p>A beautiful lavender meadow and pond in the sunset</p>
+                            <p>Neeka - State Qualifier</p>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <img src="Images/achievementImages/achievement4.jpg" alt="Kian" class="d-block"
+                            style="width:100%">
+                        <div class="carousel-caption">
+                            <p>Kian - State Winner</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/achievementImages/achievement5.jpg" alt="Paniz" class="d-block"
+                            style="width:100%">
+                        <div class="carousel-caption">
+                            <p>Paniz - State Qualifier</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/achievementImages/achievement6.jpg" alt="Nika" class="d-block"
+                            style="width:100%">
+                        <div class="carousel-caption">
+                            <p>Nika - State Qualifier</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/achievementImages/achievement7.jpg" alt="Kimiya" class="d-block"
+                            style="width:100%">
+                        <div class="carousel-caption">
+                            <p>Kimiya - State Qualifier</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/achievementImages/achievement8.jpg" alt="Adela" class="d-block"
+                            style="width:100%">
+                        <div class="carousel-caption">
+                            <p>Adela - State Qualifier</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/achievementImages/achievement9.jpg" alt="Zifu" class="d-block"
+                            style="width:100%">
+                        <div class="carousel-caption">
+                            <p>Zifu - National Winner</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/achievementImages/achievement10.jpg" alt="Arman" class="d-block"
+                            style="width:100%">
+                        <div class="carousel-caption">
+                            <p>Arman - State Winner</p>
+                        </div>
+                    </div>
+                    <div class="slide-number">
+                        <p id="number">1/10</p>
+                    </div>
+
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <button onclick="minusSlideNum();" class="carousel-control-prev" type="button" data-bs-target="#demo"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <button onclick="plusSlideNum();" class="carousel-control-next" type="button" data-bs-target="#demo"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
