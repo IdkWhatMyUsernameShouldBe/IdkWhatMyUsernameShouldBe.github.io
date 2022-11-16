@@ -39,6 +39,15 @@
             font-size: 16px;
             font-weight: 200;
         }
+
+        .typingImage {
+            border-color: rgb(130, 75, 50);
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 8px;
+            width: 620px;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -72,13 +81,15 @@
             <br>
             <p>We only accept the most passionate and dedicated piano players but, we'll give anyone an opportunity to
                 enroll so if you're interested, feel free to contact us!.</p>
+            <br>
+            <img src="Images/typing.jpg" alt="typing stock image" class="typingImage">
 
         </div>
         <div class="grid-item surveyContainer">
             <h2>Survey:</h2>
             <br>
             <p>Take the following survey to see if you would be a good fit for our class:</p>
-            <form action="">
+            <form>
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="greet"><br>
                 <label for="lname">Last name:</label><br>
@@ -108,7 +119,8 @@
             <br>
             <button class="button" type="button" onclick="finalScore()">See your Results</button>
             <br>
-            <p id="response" style="color: black;"></p>
+            <br>
+            <p id="response"></p>
 
 
         </div>
@@ -120,7 +132,7 @@
         <p>&copy 2020. Payam Khastkhodaei. All rights reserved.</p>
     </div>
     <!--Script-->
-    <script src="js/game.js"></script>
+    <script src="js/contactCode.js"></script>
 </body>
 
 </html>
