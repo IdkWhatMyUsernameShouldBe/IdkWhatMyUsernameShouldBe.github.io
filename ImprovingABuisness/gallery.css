@@ -101,3 +101,13 @@
     height: 100%;
     object-fit: cover;
 }
+
+.photo-credit {
+    padding: 0px;
+    position: absolute;
+    bottom: 0%;
+    left: 39%;
+    text-align: center;
+    font-family: belda-normal, sans-serif;
+    font-style: normal;
+}

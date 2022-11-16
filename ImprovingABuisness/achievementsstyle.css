@@ -66,6 +66,7 @@
 .middle-content {
     grid-column: 2;
     grid-row: 2;
+    font-weight: bold;
 }
 
 .slide-number {

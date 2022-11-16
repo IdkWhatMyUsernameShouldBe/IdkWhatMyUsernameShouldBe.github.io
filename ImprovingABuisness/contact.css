@@ -1,0 +1,34 @@
+.grid-container {
+    grid-template-columns: 50% auto;
+}
+
+.grid-navmenu {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    margin-bottom: 60px;
+}
+
+.contactInfo {
+    border-radius: 16px;
+    text-align: left;
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 18px;
+}
+
+.contactLink {
+    font-family: belda-normal, serif;
+    font-style: normal;
+    display: inline;
+    text-align: left;
+    padding: 0px;
+    text-decoration: underline;
+}
+
+.surveyContainer {
+    border-radius: 16px;
+    text-align: left;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 18px;
+}
